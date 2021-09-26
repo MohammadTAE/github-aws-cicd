@@ -44,7 +44,7 @@ Resources:
     Properties:
         AuthType: PERSONAL_ACCESS_TOKEN
         ServerType: GITHUB
-        Token: "{{resolve:secretsmanager:GITHUB_ACCESS:SecretScript:GITHUB_ACCESS_TOKEN}}"
+        Token: "{{resolve:secretsmanager:GITHUB_ACCESS_AWS:SecretScript:GITHUB_ACCESS_TOKEN}}"
 
   CodeBuildProject:
     Type: 'AWS::CodeBuild::Project'
